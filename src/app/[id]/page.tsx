@@ -7,6 +7,7 @@ import StateComponent from "@component/components/state";
 import HireStatus from "./_components/hire-status";
 import Reward from "./_components/reward-chart";
 import { useRouter } from "next/navigation";
+
 const PageDetail = ({ params }: { params: { id: string } }) => {
     const itemDetail: any = provider.find((item: any) => item.key === params.id);
     const router = useRouter();
