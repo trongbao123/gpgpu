@@ -9,7 +9,7 @@ import UptimeMonitor from "./UptimeMonitor";
 const Reward = () => {
     return (
         <div className="reward">
-            {/* <MixedChart /> */}
+            <MixedChart />
             <div className="uptime-reward">
                 <UptimeMonitor />
                 <InfoBox title="PoT Reward" value="3,463,000" icon="/images/image.png" />
