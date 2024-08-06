@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, Tooltip, Legend, ChartOptions } from "chart.js";
 import { Chart } from "react-chartjs-2";
