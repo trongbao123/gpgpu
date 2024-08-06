@@ -2,8 +2,19 @@ import React, { useRef } from "react";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, Tooltip, Legend, ChartOptions } from "chart.js";
 import { Chart } from "react-chartjs-2";
 import "./styles.scss";
-ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Tooltip, Legend);
+import { LineController } from "chart.js";
 
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    LineElement,
+    PointElement,
+    Tooltip,
+    Legend,
+    // **Register LineController**
+    LineController
+);
 const MixedChart: React.FC = () => {
     const chartRef = useRef<ChartJS<"bar">>(null);
 
