@@ -4,6 +4,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, 
 import { Chart } from "react-chartjs-2";
 import "./styles.scss";
 import { LineController } from "chart.js";
+import { BarController } from "chart.js";
 
 ChartJS.register(
     CategoryScale,
@@ -14,7 +15,8 @@ ChartJS.register(
     Tooltip,
     Legend,
     // **Register LineController**
-    LineController
+    LineController,
+    BarController
 );
 const MixedChart: React.FC = () => {
     const chartRef = useRef<ChartJS<"bar">>(null);
